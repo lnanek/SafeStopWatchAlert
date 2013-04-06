@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setup Device..." >
+        </Button>
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/deviceName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/no_device"
+	            android:textAppearance="?android:attr/textAppearanceMedium" >
+	        </TextView>
+	    </LinearLayout>
+            
+	    <Button
+	        android:id="@+id/foreground"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Connect Device" />
+	    
+        <Button
+            android:id="@+id/btn_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Alarm" >
+        </Button>
+
+	
+	    <Button
+	        android:id="@+id/forceLocation"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Force Location" />
+	
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statusValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>
